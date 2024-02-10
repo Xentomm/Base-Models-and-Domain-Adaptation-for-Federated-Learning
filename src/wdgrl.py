@@ -180,7 +180,7 @@ def main(args):
         modules_all = list(resnet_without_fc.children())# delete the last fc layer.
         modules_fc = list(source_model_fc.children())
 
-        model_Adrian = MyModel(nn.Sequential(*modules_all), nn.Sequential(*modules_fc))
+        model = MyModel(nn.Sequential(*modules_all), nn.Sequential(*modules_fc))
         czysty_resnet = models.resnet50()
         num_classes = 2
         num_features = czysty_resnet.fc.in_features
@@ -198,7 +198,7 @@ def main(args):
         for name,param in czysty_resnet.state_dict().items():
             names.append(name)
 
-        for name_ad, param_ad in model_Adrian.state_dict().items():
+        for name_ad, param_ad in model.state_dict().items():
             params.append(param_ad)
 
         for idx in range(len(czysty_resnet.state_dict().items())-1):
