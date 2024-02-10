@@ -1,1 +1,60 @@
-# Base-Models-and-Domain-Adaptation-for-Federated-Learning
+# Adaptation of data domains in federated learning in the problem of breast mammography image classification
+
+Machine learning models, especially deep learning models, are trained on a specific portion of data. However, data generation is an ongoing problem due to new individuals undergoing examinations (individual variability), new calibration settings for medical imaging devices, new types of diagnostic devices, etc. This raises the problem of how to effectively train a model to have generalization abilities while minimizing the impact of the type of equipment used, etc.
+
+The aim of the project is a comparative analysis of the influence of different methods of domain adaptation (influence of equipment diversity, image formats, etc.) on the classification results of mammographic images using federated learning.
+
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Installation
+
+```bash
+$ git clone https://github.com/your-username/project-name.git
+$ cd project-name
+$ python -m venv .env (or conda)
+$ source .env/Scripts/actiavate (Windows) | source .env/bin/activate (Linux)
+$ pip install requirements.txt
+```
+
+## Usage
+
+Train the base models resnet or effnet using one of this commands.
+
+```bash
+$ python src/resnet rsna path/to/model --epochs=100
+$ python src/effnet rsna path/to/model --epochs=100  
+```
+
+Train base model using one of the three domain adaptation techniques(Adda/Revgrad/Wdgrl).
+
+```bash
+$ python src/adda.py path/to/base_model vindir rsna --batch-size=64 --iterations=100 --epochs=20
+$ python src/revgrad.py path/to/base_model vindir rsna --batch-size=64 --iterations=100 --epochs=20
+$ python src/wdgrl.py path/to/base_model vindir rsna --batch-size=64 --iterations=100 --epochs=20
+```
+
+Use basic prediction if needed.
+
+```bash
+$ python src/predict.py path/to/trained_model
+```
+
+## Features
+
+List the features of your project.
+
+- src/dataloader.py : data transormation to model input
+- src/(model_name).py : traing, validation and testing of choosen model
+- src/predict.py : testing model
+
+## Team members
+
+- Łukasz Erimus
+...
+
+Supervisor: Ph.D. Jacek Rumiński, jacrumin@pg.edu.pl
