@@ -58,6 +58,6 @@ List the features of your project.
 - [Łukasz Erimus](https://github.com/Xentomm)
 - [Aleksandra Borowska](https://github.com/Ola2808-Boro)
 - [Adrian Jaromin](https://github.com/IcyArcticc)
-- Agnieszka Lewko
+- [Agnieszka Lewko](https://github.com/Acquilli)
 
-Supervisor: Ph.D. Jacek Rumiński, jacrumin@pg.edu.pl
+Supervisor: Ph.D. Jacek Rumiński
