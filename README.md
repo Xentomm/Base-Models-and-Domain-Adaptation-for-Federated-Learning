@@ -9,7 +9,6 @@ The aim of the project is a comparative analysis of the influence of different m
 - [Usage](#usage)
 - [Features](#features)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -44,6 +43,8 @@ Use basic prediction if needed.
 $ python src/predict.py path/to/trained_model
 ```
 
+To further use this models in federated learning environment use this [link](https://github.com/Ola2808-Boro/Federated-Learning-Project) to access repository with federated learning web application.
+
 ## Features
 
 List the features of your project.
@@ -54,7 +55,9 @@ List the features of your project.
 
 ## Team members
 
-- Łukasz Erimus
-...
+- [Łukasz Erimus](https://github.com/Xentomm)
+- [Aleksandra Borowska](https://github.com/Ola2808-Boro)
+- [Adrian Jaromin](https://github.com/IcyArcticc)
+- Agnieszka Lewko
 
 Supervisor: Ph.D. Jacek Rumiński, jacrumin@pg.edu.pl
