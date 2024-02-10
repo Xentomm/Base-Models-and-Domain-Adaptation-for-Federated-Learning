@@ -141,7 +141,7 @@ def main(args):
                    f'source_accuracy={mean_accuracy:.4f}')
 
         # Save the trained model
-        model_Adrian = MyModel(nn.Sequential(*list(resnet_without_fc.children())), nn.Sequential(*list(source_model_fc.children())))
+        model = MyModel(nn.Sequential(*list(resnet_without_fc.children())), nn.Sequential(*list(source_model_fc.children())))
         czysty_resnet = models.resnet50()
         num_features = czysty_resnet.fc.in_features
         czysty_resnet.fc = nn.Sequential(
@@ -158,7 +158,7 @@ def main(args):
         for name,param in czysty_resnet.state_dict().items():
             names.append(name)
 
-        for name_ad, param_ad in model_Adrian.state_dict().items():
+        for name_ad, param_ad in model.state_dict().items():
             params.append(param_ad)
 
         for idx in range(len(czysty_resnet.state_dict().items())-1):
