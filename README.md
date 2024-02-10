@@ -8,7 +8,7 @@ The aim of the project is a comparative analysis of the influence of different m
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
+- [Team Members](#teammembers)
 
 ## Installation
 
