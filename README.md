@@ -47,10 +47,8 @@ To further use this models in federated learning environment use this [link](htt
 
 ## Features
 
-List the features of your project.
-
-- src/dataloader.py : data transormation to model input
-- src/(model_name).py : traing, validation and testing of choosen model
+- src/dataloader.py : data transformation to model input
+- src/(model_name).py : training, validation and testing of choosen model
 - src/predict.py : testing model
 
 ## Team members
