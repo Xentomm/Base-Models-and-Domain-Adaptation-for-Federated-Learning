@@ -13,7 +13,7 @@ The aim of the project is a comparative analysis of the influence of different m
 ## Installation
 
 ```bash
-$ git clone https://github.com/your-username/project-name.git
+$ git clone https://github.com/Xentomm/Base-Models-and-Domain-Adaptation-for-Federated-Learning.git
 $ cd project-name
 $ python -m venv .env (or conda)
 $ source .env/Scripts/actiavate (Windows) | source .env/bin/activate (Linux)
